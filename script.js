@@ -1,18 +1,18 @@
 //Sidebar toggle
 
-var SidebarOpen = false;
-var Sidebar = document.getElementById("sidebar");
+var sidebarOpen = false;
+var sidebar = document.getElementById("sidebar");
 function openSidebar() {
-  if (SidebarOpen) {
-    Sidebar.classList.add("sidebar-responsive");
-    SidebarOpen = true;
+  if (sidebarOpen) {
+    sidebar.classList.add("sidebar-responsive");
+    sidebarOpen = true;
   }
 }
 
 function closeSidebar() {
-  if (SidebarOpen) {
-    Sidebar.classList.remove("sidebar-responsive");
-    SidebarOpen = false;
+  if (sidebarOpen) {
+    sidebar.classList.remove("sidebar-responsive");
+    sidebarOpen = false;
   }
 }
 

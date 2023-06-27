@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #e6e8ed; */
   background-color: #bdc8cd;
 
   font-family: sans-serif;
@@ -37,12 +36,13 @@ body {
 .menu-icon {
   display: none;
 }
-/* sidebar */
+
+/* -----sidebar------ */
 #sidebar {
   grid-area: sidebar;
   height: 100%;
   background-color: #21232d;
-  /* background-color: #4f4f4f; */
+
   color: #9799ab;
   overflow-y: auto;
   transition: all 0.5s;
@@ -55,6 +55,9 @@ body {
   padding: 20px 20px 20px 20px;
   margin-bottom: 30px;
   list-style: none;
+}
+.sidebar-title > span {
+  display: none;
 }
 .sidebar-logo {
   margin-top: 15px;
@@ -85,7 +88,8 @@ body {
   display: inline !important;
   position: absolute;
 }
-/* main */
+
+/* ---main---- */
 .main-container {
   grid-area: main;
 
@@ -110,6 +114,11 @@ body {
   color: #21232d;
   line-height: 1.5;
   justify-content: space-between;
+}
+.content-img {
+  margin: 3% 0 2% 0;
+  height: 95%;
+  width: 95%;
 }
 /*-------Media Query---------*/
 
