@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Simple Dashboard</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Poppins font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Nunito:wght@600;700;800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- material-icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined"> menu </span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined"> search </span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined"> notifications </span>
+          <span class="material-icons-outlined"> email </span>
+          <span class="material-icons-outlined"> account_circle </span>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <!-- sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-logo">
+            <img
+              height="25"
+              src="https://cdn-icons-png.flaticon.com/128/2098/2098402.png"
+              alt="note-icon"
+            />
+            <span class="material-icon-outlined"> My Apps</span>
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">
+            close
+          </span>
+        </div>
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined"> home </span>
+            <a href="#" onclick="showContent('home-content')">Home</a>
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined"> contacts </span
+            ><a href="#" onclick="showContent('contact-content')">Contact</a>
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined"> info </span>
+            <a href="#" onclick="showContent('information-content')"
+              >Information</a
+            >
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined"> library_books </span>
+            <a href="#" onclick="showContent('guide-content')">Guide</a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- main -->
+      <main class="main-container">
+        <div class="content" id="home-content">
+          <h1>Welcome to the Home Section</h1>
+          <p>
+            <b>This is the home content.</b><br />
+            <img src="assets/home_page.png" style="size: 60%" />
+          </p>
+        </div>
+        <div class="content" id="contact-content" style="display: none">
+          <h1>Welcome to the Contact Section</h1>
+
+          <p>
+            <b>This is the contact us information.</b>
+            <img src="assets/contact.png" style="size: 60%" />
+          </p>
+        </div>
+        <div class="content" id="information-content" style="display: none">
+          <h1>Welcome to the Information Section</h1>
+
+          <p>
+            <b>This is some information.</b>
+            <img src="assets/information_page.png" />
+          </p>
+        </div>
+        <div class="content" id="guide-content" style="display: none">
+          <h1>Welcome to the Guide Section</h1>
+
+          <p>
+            <b>This is a guide.</b>
+            <img src="assets/guide_page.png" style="size: adjust 60%" />
+          </p>
+        </div>
+      </main>
+      <!-- <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Home</p>
+        </div>
+        <div class="main-cards">
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary font-weight-bold">Contents</p>
+            </div>
+          </div>
+        </div>
+      </main> -->
+    </div>
+  </body>
+</html>
